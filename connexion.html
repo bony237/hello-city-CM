@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello City | Inscription</title>
+
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap-4.5.2-dist/css/bootstrap.css">
+
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="./assets/css/signPages.css">
+</head>
+<body>
+    <div class="text-secondary">
+        <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-4 mx-auto">
+            <!--logo HELLO CITY-->
+            <div class="text-center mx-auto h1">HELLO CITY LOGO</div>
+    
+            <!--form create account-->
+            <form action="" class="border rounded w-100 p-4 my-3 mx-auto">
+                <h3 class="mb-4">S'identifier</h3>
+                
+                <!--tel, email-->
+                <div class="form-group">
+                    <label class="font-weight-bold" for="email-tel">Adresse e-mail / téléphone</label>
+                    <input required type="text" name="email-tel" id="email-tel" class="form-control">
+                </div>
+
+
+                <!--mot de passe-->
+                <div class="form-group">
+                    <label class="font-weight-bold" for="password">Mot de passe</label>
+                    <input required type="password" name="password" id="password" class="form-control" minlength="6">
+                </div>
+       
+                
+                <!--btn submission-->
+                <input type="submit" name="submit" class="my-4 form-control font-weight-bold btn btn-block btn-warning text-white"
+                 value="Continuer">
+    
+                <div class="text-center font-weight-bold">
+                    Utilisez vos comptes <a href="#" class="fa fa-google text-decoration-none mx-3"></a>
+                    <a href="#" class="text-decoration-none fa fa-facebook"></a>
+                </div>
+
+                <div class="my-4 small">
+                    En continuant, vous acceptez les <a href="#">Conditions d'utilisation</a> et la 
+                    <a href="#">notice de Protection de vos informations Personnelles</a> de Hello City.
+                </div>
+                <hr>
+            </form>
+
+            <div class="d-flex align-items-center my-3">
+                <hr class="border col-2">
+                <span class="text-center px-2">Nouveau chez Hello City ?</span>
+                <hr class="border col-2">
+            </div>
+
+            <a href="./inscription.html" class="btn btn-block btn-secondary font-weight-bold">Créer votre compte Hello City</a>
+        </div>
+    
+        <hr class="shadow-lg mt-4">
+    
+        <div class="my-4 text-center font-weight-bold small">Copyright © 2020 Hello City</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+        $('form').on('submit', function(event) {
+            
+            let password = $('#password').val();
+            let password_again = $('#password-again').val();
+            if(password === password_again) {
+                $('#password-error').hide();
+            }
+            else {
+                event.preventDefault();
+                $('#password-error').show();
+            }
+        });
+    </script>
+</body>
+</html>
