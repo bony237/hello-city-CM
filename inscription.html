@@ -10,18 +10,60 @@
 
     <!--font awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    
     <!--custom css-->
-    <link rel="stylesheet" href="./assets/css/signPages-custom.css">
+    <link rel="stylesheet" href="./assets/css/signPages.css">
 </head>
 <body>
-    <div class="text-secondary">
+    <div class="fixed-top h5 py-2 d-flex justify-content-between align-items-center border border-bottom px-3 px-sm-5 bg-white font-italic font-weight-light">
+        <div class="font-weight-normal d-none d-sm-block">HELLO CITY LOGO</div>
+        <div class="font-weight-normal d-sm-none">HC</div>
+        <div>
+            Administrateur ? <span data-toggle="modal" data-target="#adminPass" class="mb-1 btn btn-primary btn-sm font-weight-bold py-0 py-sm-auto"><span class="d-none d-sm-inline-block mr-1">Cliquez-ici</span>  <span class="fa fa-caret-right"></span></span>
+        </div>
+
+        
+    </div>
+
+    <div id="adminPass" class="modal fade" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>Hello Administrateur !</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <p>Veuillez entrer le mot de passe réservé aux <strong> administrateurs</strong> pour vous connecter ;)</p>
+                    <form action="" id="admin-form">
+                        <div class="form-group mb-0 d-flex">
+                            <input type="password" placeholder="mot de passe" class="form-control" required id="password-admin">
+                            <input type="submit" value="Valider" class="btn btn-success font-weight-bold px-3">
+                        </div>
+
+                        <div id="wrong-admin-password" style="display: none;">
+                            <div class="ml-2 d-flex align-items-center text-danger">
+                                <span class="fa fa-exclamation font-italic"></span>
+                                <span class="small mx-2 font-weight-bold">mot de passe incorrect</span>
+                            </div>
+                        </div>
+                    </form>
+                    
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-secondary pt-4 mt-5">
         <div class="col-11 col-sm-10 col-md-8 col-lg-6 col-xl-4 mx-auto">
             <!--logo HELLO CITY-->
             <div class="text-center mx-auto h1">HELLO CITY LOGO</div>
     
             <!--form create account-->
-            <form action="" class="border rounded w-100 p-4 my-3 mx-auto">
+            <form action="" class="border rounded w-100 p-4 my-3 mx-auto" id="user-form">
                 <h3>Créer un compte</h3>
                 
                 <!--nom-->
@@ -38,8 +80,8 @@
     
                 <!--mot de passe-->
                 <div class="form-group">
-                    <label class="font-weight-bold" for="password">Mot de passe</label>
-                    <input required type="password" name="password" id="password" class="form-control" minlength="6" placeholder="Au moins 6 caractères">
+                    <label class="font-weight-bold" for="password-user">Mot de passe</label>
+                    <input required type="password" name="password" id="password-user" class="form-control" minlength="6" placeholder="Au moins 6 caractères">
                     <div class="d-flex align-items-center">
                         <span class="fa fa-info text-primary font-italic"></span>
                         <span class="small mx-2">Les mots de passes doivent au moins avoir 6 caractères.</span>
@@ -50,7 +92,7 @@
                 <div class="form-group">
                     <label class="font-weight-bold" for="password-again">Entrer le mot de passe à nouveau</label>
                     <input required type="password" id="password-again" class="form-control">
-                    <div id="password-error" style="display: none;">
+                    <div id="password-verify-error" style="display: none;">
                         <div class="d-flex align-items-center text-danger">
                             <span class="fa fa-exclamation font-italic"></span>
                             <span class="small mx-2 font-weight-bold">les mots de passes ne sont pas identiques</span>
@@ -83,19 +125,39 @@
         <div class="my-4 text-center font-weight-bold small">Copyright © 2020 Hello City</div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
     <script>
         
-        $('form').on('submit', function(event) {
+        $('#user-form').on('submit', function(event) {
             
-            let password = $('#password').val();
+            let passwordUser = $('#password').val();
             let password_again = $('#password-again').val();
-            if(password === password_again) {
-                $('#password-error').hide();
+            if(passwordUser === password_again) {
+                $('#password-verify-error').hide();
             }
             else {
                 event.preventDefault();
-                $('#password-error').show();
+                $('#password-verify-error').show();
+            }
+        });
+
+
+        /**
+        *   Administrator Temporaly Registration
+        */
+        $('#admin-form').on('submit', function(event) {
+            
+            let passwordAdmin = $('#password-admin').val();
+            if(passwordAdmin === "hello city admin") {
+                $('#wrong-admin-password').hide();
+                alert('Welcome ADMINISTRATOR !!!');
+            }
+            else {
+                event.preventDefault();
+                $('#wrong-admin-password').show();
             }
         });
     </script>
