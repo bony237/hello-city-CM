@@ -31,7 +31,7 @@ body {
 @media (max-width: 575.98px) {
     .custom-block-service-size {
         /*max-height: 20px;*/
-        max-width: 45%;
+        max-width: 50%;
     }
 
     body {
@@ -45,8 +45,6 @@ body {
             grid-template-columns: 1fr 1fr 1fr;
     
             font-size: x-small;
-
-            border: dashed 2px red;
         }
     }
     
