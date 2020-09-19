@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,12 +16,33 @@
 </head>
 <body class=" h-100">
     
+    <!--General nav bar SM-->
+    <div>
+        <div class="d-sm-none bg-danger text-white d-flex justify-content-between align-items-center p-3 mb-3">
+                
+            <span class="fa fa-bars fa-2x menu-sm"></span>
+            <span class="text-light ml-3 font-italic"><i class="fa fa-user "></i> Mon compte</span>
+            <span class="h4 font-weight-bold">HELLO CITY</span>
+        </div>
+
+        <div class="menu-item d-none">
+            <!--navbar-->
+            <div class="list-group font-weight-bold py-5 my-5">
+                <a href="#" class="list-group-item list-group-item-action rounded-0 text-white bg-dark"> <i class="mr-2 fa fa-user"></i> Mon compte</a>
+                <a href="#" class="list-group-item list-group-item-action rounded-0 text-white bg-danger"> <i class="mr-2 fa fa-check-square-o"></i> Mes commandes</a>
+                <a href="#" class="list-group-item list-group-item-action rounded-0 text-white bg-danger"> <i class="mr-2 fa fa-undo"></i> Retours</a>
+            </div>
+
+            <!--deconnexion-->
+            <div class="font-weight-bold text-center pt-5"><span class="btn font-weight-bold text-white"> <i class="mr-2 fa fa-power-off"></i> déconnexion</span></div>
+        </div>
+    </div>
 
     <!--General nav bar-->
-    <div id="G-navbar" class="bg-danger px-0 mx-0 text-white">
+    <div id="G-navbar" class="d-none d-sm-block bg-danger px-0 mx-0 text-white">
         <!--logo hellocity-->
         <div class="bg-dark p-3 w-100 text-center">
-            <h2 class="font-weight-bold">HELLO CITY</h2>
+            <h2 class="font-weight-bold"> HELLO CITY</h2>
         </div>
 
         <!--navbar-->
@@ -37,16 +58,18 @@
 
     <!--Mon compte-->
     <div id="mon-compte_block">
+        
+        
         <!--header-->
-        <div class="mt-0 d-flex justify-content-between align-items-center small">
-            <div>
-                <span class="text-danger font-weight-bold"> <i class="ml-2 fa fa-phone-square"></i> Service client</span> : 06 60 00 00 00 de lundi à vendredi de 9h à 18h
+        <div class="mt-0 ml-2 d-flex flex-wrap justify-content-between align-items-center small">
+            <div class="">
+                <span class="text-danger font-weight-bold"> <i class="fa fa-phone-square"></i> Service client</span> : 06 60 00 00 00 de lundi à vendredi de 9h à 18h
             </div>
 
-            <div class="d-flex text-danger align-items-center font-weight-bold justify-content-end">
+            <div class="d-flex flex-wrap my-2 text-danger align-items-center font-weight-bold">
                 <span>Paiements securisés</span>
-                <span class="mx-5">Expedition 24h</span>
-                <span class="text-white bg-danger py-1 px-3">Livraison gratuite dès 20€</span>
+                <span class="mx-md-5 mx-3">Expedition 24h</span>
+                <span class="text-white bg-danger py-1 px-3 ">Livraison gratuite dès 20€</span>
             </div>
         </div>
 
@@ -58,10 +81,10 @@
             <!--welcome message-->
             <h3 class="ml-3 my-5">Bonjour, <strong>John STIVEAUX</strong></h3>
 
-            <div class="d-flex">
+            <div class="d-flex flex-wrap">
                 <!--transaction infos block-->
-                <div class="border rounded col mr-4">
-                    <div class="m-2 font-weight-bold">Dernières commandes</div>
+                <div class="border rounded col px-0 px-sm-auto mx-3 mb-4">
+                    <div class="m-2 px-3 font-weight-bold">Dernières commandes</div>
                     <div class="block-commands m-2 small">
                         
                         <!--title commands-->
@@ -91,7 +114,7 @@
                 </div>
                 
                 <!--personal data-->
-                <div class="border rounded col">
+                <div class="border rounded col mx-3 mb-4">
                     <div class="m-2 font-weight-bold">Données personnelles</div>
                     <div class="d-flex justify-content-around p-2 small">
                         <div class="d-flex flex-column">
@@ -113,20 +136,22 @@
                 </div>
             </div>
 
-            <hr class="mt-4">
+            <hr class="">
         </div>
 
         <!--engagements-->
-        <div>
-            <div class="text-center font-weight-bold py-4">NOS ENGAGEMENTS</div>
-            <div class="d-flex justify-content-between small mx-5 px-5">
-                <div class="d-flex flex-column align-items-center">
+        <div class="text-center">
+            <div class="text-center font-weight-bold pt-4">NOS ENGAGEMENTS</div>
+            <div class="d-flex flex-wrap justify-content-center align-items-center small">
+                <!--block 1-->
+                <div class="d-flex flex-column m-4 col-auto justify-content-center align-items-center">
                     <span class="text-danger my-2"> <i class="fa fa-user-circle-o fa-3x"></i> </span>
                     <span>Satisfait ou rembourse</span>
                     <span>Echange / retour 15 jours</span>
                 </div>
 
-                <div class="d-flex flex-column align-items-center">
+                <!--block 2-->
+                <div class="d-flex flex-column m-4 col-auto justify-content-center align-items-center">
                     <span class="text-danger my-2"> <i class="fa fa-history fa-3x"></i> </span>
                     <span>Expédition 24h</span>
                     <span class="d-flex justify-content-between mt-1">
@@ -135,7 +160,8 @@
                     </span>
                 </div>
 
-                <div class="d-flex flex-column align-items-center">
+                <!--block 3-->
+                <div class="d-flex flex-column m-4 col-auto justify-content-center align-items-center">
                     <span class="text-danger my-2"> <i class="fa fa-lock fa-3x"></i> </span>
                     <span>Paiements sécurisés</span>
                     <span class="d-flex justify-content-between">
@@ -146,24 +172,26 @@
                     </span>
                 </div>
 
-                <div class="d-flex flex-column align-items-center">
+                <!--block 4-->
+                <div class="d-flex flex-column m-4 col-auto justify-content-center align-items-center">
                     <span class="text-danger my-2"> <i class="fa fa-users fa-3x"></i> </span>
                     <span>Service client</span>
                     <span>06 60 00 00 00</span>
                 </div>
             </div>
 
-            <div class="my-5 text-right">
-                <span class="bg-danger text-white px-4 py-1 rounded">Messagerie instantanée</span>
+            <div class="my-3 my-sm-5 text-right">
+                <span class="bg-danger d-none d-sm-inline text-white px-4 py-1 rounded">Messagerie instantanée</span>
+                <span class="small bg-danger d-sm-none text-white px-3 py-1 rounded">Messagerie instantanée</span>
                 <hr class="my-0 mx-4">
             </div>
 
         </div>
 
         <!--service proposé par l'application-->
-        <div class="mx-4">
-            <div class="d-flex justify-content-around">
-                <div class="d-flex flex-column col">
+        <div class="">
+            <div class="mx-sm-4 d-flex flex-wrap justify-content-center">
+                <div class="d-flex flex-column m-1 py-2 py-sm-0 m-sm-2 m-md-3 col-auto">
                     <span class="font-weight-bold">Aide</span>
                     <span class="small">Contacter le Service Client</span>
                     <span class="small">Suivre ma commande</span>
@@ -171,7 +199,7 @@
                     <span class="small">Questions fréquentes</span>
                 </div>
 
-                <div class="d-flex flex-column col">
+                <div class="d-flex flex-column m-1 py-2 py-sm-0 m-sm-2 m-md-3 col-auto">
                     <span class="font-weight-bold">Nos services</span>
                     <span class="small"> <i class="fa fa-check text-info mr-2"></i> Expedition 24h</span>
                     <span class="small"> <i class="fa fa-check text-info mr-2"></i> Livraison gratuite</span>
@@ -179,7 +207,7 @@
                     <span class="small"> <i class="fa fa-check text-info mr-2"></i> Meilleur prix sur internet</span>
                 </div>
 
-                <div class="d-flex flex-column col">
+                <div class="d-flex flex-column m-1 py-2 py-sm-0 m-sm-2 m-md-3 col-auto custom-block-service-size">
                     <span class="font-weight-bold">Assistance en ligne</span>
                     <span class="small">Nous répondrons à vos questions du lundi au vendredi de 8h à 20h et le samedi de 10h à 18h.</span>
                     <span class="small"><span class="font-weight-bold">Service client :</span> 0805 65 01 01</span>
@@ -197,16 +225,16 @@
                 </div>
             </div>
 
-            <hr class="my-4">
+            <hr class="mt-4">
         </div>
 
 
         <!--footer-->
-        <div class="d-flex justify-content-around bg-secondary text-white py-2 small">
-            <span class="small">© HELLO CITY - 2020</span>
-            <span class="small">Conditions Générales de vente</span>
-            <span class="small">Protection des données personnelles</span>
-            <span class="small">Mentions légales</span>
+        <div class="d-flex flex-wrap justify-content-around bg-secondary text-white py-2 small">
+            <span class="small my-sm-1 my-auto mx-3">© HELLO CITY - 2020</span>
+            <span class="small my-sm-1 my-auto mx-3">Conditions Générales de vente</span>
+            <span class="small my-sm-1 my-auto mx-3">Protection des données personnelles</span>
+            <span class="small my-sm-1 my-auto mx-3">Mentions légales</span>
         </div>
 
     </div>

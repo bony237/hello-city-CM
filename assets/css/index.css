@@ -17,3 +17,37 @@ body {
 .block-commands div:last-child {
     grid-column: -1/-2;
 }
+
+
+.custom-block-service-size {
+    /*max-height: 20px;*/
+    max-width: 40%;
+}
+
+.menu-sm {
+    cursor: pointer;
+}
+
+@media (max-width: 575.98px) {
+    .custom-block-service-size {
+        /*max-height: 20px;*/
+        max-width: 45%;
+    }
+
+    body {
+        display: block;
+    }
+
+    @media (max-width: 375px) {
+        .block-commands {
+            display: grid;
+        
+            grid-template-columns: 1fr 1fr 1fr;
+    
+            font-size: x-small;
+
+            border: dashed 2px red;
+        }
+    }
+    
+}
