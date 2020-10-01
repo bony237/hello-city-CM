@@ -1,0 +1,8 @@
+html, body {
+    font-size: small;
+}
+
+.general-header #first-header .custom-cursor:hover {
+    cursor: pointer;
+    color: tomato;
+}
