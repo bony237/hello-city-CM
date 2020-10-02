@@ -53,40 +53,44 @@
             </div>
 
             <!--second header-->
-            <div class="d-flex flex-wrap align-items-end my-4">
+            <div class="d-flex flex-wrap justify-content-center align-items-center mx-2 mx-sm-5 my-4">
                 <!--logo + all categories dropdown-btn-->
-                <div class="d-flex mr-5 bg-light">
+                <div class="d-flex mt-1 mr-5 bg-light">
                     <!--logo img
                     <div class="col-auto">
                         <img src="" alt="" class="w-100">
                     </div>-->
                     <h1 class="logo-temp mx-3 font-weight-bold">HELLO CITY</h1>
                     <!--dropdown-btn-->
-                    <div class="col-auto small custom-dropdown-btn text-secondary py-3 px-2 bg-ligh border d-flex rounded">
+                    <div class="col-auto small custom-dropdown-btn text-secondary py-3 px-2 bg-ligh border d-inline-flex rounded">
                         <i class="fa fa-bars fa-2x"></i> &nbsp; <i class="fa fa-caret-down fa-2x"></i>
                     </div>
                 </div>
 
                 <!--search block-->
-                <div class="col-6 ml-5 pl-5">
+                <div class="my-3 d-flex col-sm-auto align-items-center align-items-sm-end">
                     <!--search bar-->
-                    <div class="ml-5">
+                    <div class="col">
                         <form class="row m-0" id="search-bar">
                             <input type="text" value="moto" class="col text-secondary mr-0 form-control py-2"><button class="col-auto text-white"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </form>
-                        <div class="d-flex text-secondary">
+                        <div class="flex-wrap text-secondary d-none d-sm-flex">
                             <span><a href="#" class="btn-link custom-cursor">projecteur</a> &nbsp;|</span>
-                            <span>&nbsp; <a href="#" class="btn-link custom-cursor"> mobile téléphone</a> &nbsp;|</span>
-                            <span>&nbsp; <a href="#" class="btn-link custom-cursor"> babouches de luxe femme</a> &nbsp;|</span>
+                            <span>&nbsp; <a href="#" class="btn-link custom-cursor"> 
+                                <span class="d-none d-md-inline">mobile</span> téléphone</a> &nbsp;|
+                            </span>
+                            <span>&nbsp; <a href="#" class="btn-link custom-cursor"> babouches <span class="d-none d-md-inline">de luxe femme</span> </a> &nbsp;|</span>
                             <span>&nbsp; <a href="#" class="btn-link custom-cursor"> chaussure femme</a></span>
                         </div>
                     </div>
+
+                    <!--shopping box-->
+                    <div id="shopping-box" class="ml-4 d-noe">
+                        <span><i class="fa fa-shopping-cart fa-5x"></i></span>
+                    </div>
                 </div>
 
-                <!--shopping box-->
-                <div id="shopping-box" class="ml-4">
-                    <span><i class="fa fa-shopping-cart fa-5x"></i></span>
-                </div>
+                
             </div>
             
             <!--all categories banner-->
