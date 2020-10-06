@@ -58,3 +58,8 @@ td {
 tr {
     height: 100px;
 }
+
+.all-categories-header .custom-cursor {
+    white-space: nowrap;
+    overflow: hidden;
+}
