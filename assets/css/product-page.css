@@ -1,12 +1,13 @@
 html, body {
     font-size: small;
+    background-color: #f8f9fa;
 }
 
-.general-header .custom-cursor {
+.custom-cursor {
     color: inherit!important;
 }
 
-.general-header .custom-cursor:hover {
+.custom-cursor:hover {
     cursor: pointer;
     color: tomato!important;
 }
@@ -31,4 +32,29 @@ html, body {
 .custom-dropdown-btn:hover {
     cursor: pointer;
     opacity: 0.5;
+}
+
+#banner {
+    font-size: xx-small!important;
+}
+
+table {
+    background-color: white;
+    table-layout: fixed;
+}
+
+td.active {
+    color: tomato;
+}
+
+.text-tomato {
+    color: tomato!important;
+}
+
+td {
+    overflow: hidden;
+}
+
+tr {
+    height: 100px;
 }

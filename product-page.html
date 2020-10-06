@@ -68,39 +68,523 @@
                 </div>
 
                 <!--search block-->
-                <div class="my-3 d-flex col-sm-auto align-items-center align-items-sm-end">
+                <div class="p-0 p-sm-auto my-3 d-flex col-sm-auto align-items-center align-items-sm-end">
                     <!--search bar-->
                     <div class="col">
                         <form class="row m-0" id="search-bar">
                             <input type="text" value="moto" class="col text-secondary mr-0 form-control py-2"><button class="col-auto text-white"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </form>
                         <div class="flex-wrap text-secondary d-none d-sm-flex">
-                            <span><a href="#" class="btn-link custom-cursor">projecteur</a> &nbsp;|</span>
-                            <span>&nbsp; <a href="#" class="btn-link custom-cursor"> 
+                            <span><a class="btn-link custom-cursor">projecteur</a> &nbsp;|</span>
+                            <span>&nbsp; <a class="btn-link custom-cursor"> 
                                 <span class="d-none d-md-inline">mobile</span> téléphone</a> &nbsp;|
                             </span>
-                            <span>&nbsp; <a href="#" class="btn-link custom-cursor"> babouches <span class="d-none d-md-inline">de luxe femme</span> </a> &nbsp;|</span>
-                            <span>&nbsp; <a href="#" class="btn-link custom-cursor"> chaussure femme</a></span>
+                            <span>&nbsp; <a class="btn-link custom-cursor"> babouches <span class="d-none d-md-inline">de luxe femme</span> </a> &nbsp;|</span>
+                            <span>&nbsp; <a class="btn-link custom-cursor"> chaussure femme</a></span>
                         </div>
                     </div>
 
                     <!--shopping box-->
-                    <div id="shopping-box" class="ml-4 d-noe">
-                        <span><i class="fa fa-shopping-cart fa-5x"></i></span>
+                    <div id="shopping-box" class="ml-0 pr-4 ml-sm-4">
+                        <span>
+                            <i class="fa fa-shopping-cart fa-5x d-none d-sm-inline"></i>
+                            <i class="fa fa-shopping-cart fa-3x d-sm-none"></i>
+                        </span>
                     </div>
                 </div>
 
                 
             </div>
-            
-            <!--all categories banner-->
-            <div></div>
-            
-            <!--all categories-->
-            <div></div>
-        </div>
-        <div class="all-categories-header">
 
+            <!--banner-->
+            <div>
+                <div class="bg-info text-white px-5 py-4" id="banner">
+                    <span class="h2 d-none d-sm-inline">TOUTES LES CATEGORIES</span>
+                    <span class="h4 d-sm-none">TOUTES LES CATEGORIES</span>
+                    <span class="ml-4">Achetez malin, vivez mieux!</span>
+                </div>
+                <div class="px-3 ml-3 ml-sm-0 px-sm-5 h6 my-3">
+                    <a href="#">Accueil</a> > <span>Toutes les Catégories</span>
+                </div>
+            </div>
+            
+            <!--all categories items (banner)-->
+            <div class="mx-5 my-4 d-none d-sm-block">
+                <table class="table table-bordered w-100 text-secondary bg-white">
+                    <!--ligne 1-->
+                    <tr>
+                        <td class="active align-middle"> <!--case 1-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Téléphones portables"> <i class="fa fa-mobile fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Téléphones portables</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 2-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Ordinateur et bureautique"> <i class="fa fa-laptop fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Ordinateurs</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 3-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Electronique"> <i class="fa fa-headphones fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Electronique</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 4-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Bijoux et Accessoires"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Bijoux et Accessoires</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 5-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Montres"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Montres</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 6-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Maison & Animalerie"> <i class="fa fa-bath fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Maison & Animalerie</span></a>
+                        </td>
+                    </tr>
+
+                    <!--ligne 2-->
+                    <tr>
+                        <td class="align-middle"> <!--case 1 bag-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Baggages et sacs"> <i class="fa fa-shopping-bag fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Baggages et sacs</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 2 shoe-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Chaussures"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Chaussures</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 3 baby bottle-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Mère et enfant"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Mère et enfant</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 4-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Sports et Loisirs"> <i class="fa fa-futbol-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Sports et Loisirs</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 5-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Beauté & Santé"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Beauté & Santé</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 6-->
+                            <a class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Plus de Catégories"> <i class="fa fa-ellipsis-h fa-2x ml-2 mr-4"></i> <span class="d-none d-md-inline">Plus de Catégories</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="all-categories-header m-4 m-sm-5">
+            <!--phones-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="phone">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Téléphones portables <span class="d-none d-sm-inline"> et télécommunications</span></a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">IPhones</a>
+                        <a class="custom-cursor">Batterie externe</a>
+                        <a class="custom-cursor">Talkie Walkie</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Mobile Téléphones</a>
+                        <a class="custom-cursor">Accessoires téléphone portable</a>
+                        <a class="custom-cursor">Équipements de communication</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Téléphones</a>
+                        <a class="custom-cursor">Pièces de téléphone portable</a>
+                        <a class="custom-cursor">Pièces et accessoires de talkie-walkie</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Téléphones reconditionnés</a>
+                        <a class="custom-cursor">Étuis et coques pour téléphone</a>
+                        <a class="custom-cursor">Téléphones et accessoires</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--computer-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="computer">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Ordinateur et bureautique</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Électronique de bureau</a>
+                        <a class="custom-cursor">Cartes mémoire et SSD</a>
+                        <a class="custom-cursor">Accessoires pour tablette</a>
+                        <a class="custom-cursor">Informatique industrielle et accessoires</a>
+                        <a class="custom-cursor">Pièces d'ordinateur portable</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Ordinateur Périphériques</a>
+                        <a class="custom-cursor">Composants informatiques</a>
+                        <a class="custom-cursor">Ordinateur portable Accessoires</a>
+                        <a class="custom-cursor">Ordinateurs De Bureau</a>
+                        <a class="custom-cursor">Pièces pour tablette</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Ordinateurs Portables</a>
+                        <a class="custom-cursor">Réseau</a>
+                        <a class="custom-cursor">Carte de démonstration et accessoires</a>
+                        <a class="custom-cursor">Serveurs</a>
+                        <a class="custom-cursor">Logiciel de Bureau</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Android Comprimés</a>
+                        <a class="custom-cursor">Souris et claviers</a>
+                        <a class="custom-cursor">Mini PC</a>
+                        <a class="custom-cursor">Nettoyeurs d'ordinateur</a>
+                        <a class="custom-cursor">Ordinateurs portables de jeu</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--electronique-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="electronic">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Electronique</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Accessoires audio et vidéo portables</a>
+                        <a class="custom-cursor">Photographie</a>
+                        <a class="custom-cursor">Jeux vidéo</a>
+                        <a class="custom-cursor">Accessoires électroniques pour la maison</a>
+                        <a class="custom-cursor">Vivre Équipement</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Intelligent Électronique</a>
+                        <a class="custom-cursor">Cigarettes électroniques</a>
+                        <a class="custom-cursor">Caméscope sport et action</a>
+                        <a class="custom-cursor">Dispositifs de réalité augmentée</a>
+                        <a class="custom-cursor">Source d'alimentation</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Systèmes audio & vidéo maison</a>
+                        <a class="custom-cursor">Écouteurs et casques</a>
+                        <a class="custom-cursor">Haut-parleurs</a>
+                        <a class="custom-cursor">Robot</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Accessoires et pièces</a>
+                        <a class="custom-cursor">Dispositifs portables</a>
+                        <a class="custom-cursor">360 ° Vidéo Caméras et Accessoires</a>
+                        <a class="custom-cursor">HIFI Dispositifs</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--bijoux-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="bijou">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Bijoux et Accessoires</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Bijouterie fine</a>
+                        <a class="custom-cursor">Bracelets et joncs</a>
+                        <a class="custom-cursor">Fabrication de bijoux</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Colliers et pendentifs</a>
+                        <a class="custom-cursor">Parures de bijoux et plus</a>
+                        <a class="custom-cursor">Bijoux personnalisés</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Boucles D'oreilles</a>
+                        <a class="custom-cursor">Perles et confection de bijoux</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Anneaux</a>
+                        <a class="custom-cursor">Bijoux de mariage et fiançailles</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--montres-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="watch">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Montres</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Montres homme</a>
+                        <a class="custom-cursor">Montre de poche</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Montres femme</a>
+                        <a class="custom-cursor">Montre Accessoires</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Montres couple</a>
+                        <a class="custom-cursor">Bracelets de montres femme</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Montres enfant</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--bijoux-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="bijoux">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Maison & Animalerie</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Cuisine, salle à manger et bar</a>
+                        <a class="custom-cursor">Articles de fête</a>
+                        <a class="custom-cursor">Produits pour animaux de compagnie</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Décoration de la maison</a>
+                        <a class="custom-cursor">Stockage et organisation</a>
+                        <a class="custom-cursor">Jardin Fournitures</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Textiles d'intérieur</a>
+                        <a class="custom-cursor">Articles de salle de bain</a>
+                        <a class="custom-cursor">Ménage Marchandises</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Arts, Artisanat et À Coudre</a>
+                        <a class="custom-cursor">Ménage De Nettoyage</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--bag-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="bags">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Baggages et sacs</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Sacs femme</a>
+                        <a class="custom-cursor">Sacs pour bébé et enfants</a>
+                        <a class="custom-cursor">Pièces de sacs et accessoires</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Sacs homme</a>
+                        <a class="custom-cursor">Valises et sacs de voyage</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Sacs à dos</a>
+                        <a class="custom-cursor">Fonctionnelle Sacs</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Portefeuilles</a>
+                        <a class="custom-cursor">Porte-monnaies</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--shoes-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="shoes">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Chaussures</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Chaussures femme</a>
+                        <a class="custom-cursor">Chaussures décontractées homme</a>
+                        <a class="custom-cursor">Bottes homme</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Chaussures plates femme</a>
+                        <a class="custom-cursor">Chaussures vulcanisées femme</a>
+                        <a class="custom-cursor">Accessoires pour chaussures</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Escarpins femme</a>
+                        <a class="custom-cursor">Chaussures vulcanisées homme</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Chaussures homme</a>
+                        <a class="custom-cursor">Bottes femme</a>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <!--mother-child-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="mother-child">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Mère et enfant</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Vêtements pour bébé fille</a>
+                        <a class="custom-cursor">Chaussures enfant</a>
+                        <a class="custom-cursor">Literie pour bébé</a>
+                        <a class="custom-cursor">Chaussures bébé</a>
+                        <a class="custom-cursor">Meubles pour bébés</a>
+                        <a class="custom-cursor">Sièges auto et accessoires</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Vêtements bébé garçon</a>
+                        <a class="custom-cursor">Activité et équipements</a>
+                        <a class="custom-cursor">Sécurité</a>
+                        <a class="custom-cursor">Apprentissage de la propreté</a>
+                        <a class="custom-cursor">Bébé Alimentaire</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Vêtements fille</a>
+                        <a class="custom-cursor">Sac à langer</a>
+                        <a class="custom-cursor">Alimentation</a>
+                        <a class="custom-cursor">Grossesse et maternité</a>
+                        <a class="custom-cursor">Accessoires</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Garçons Vêtements</a>
+                        <a class="custom-cursor">Soins pour bébé</a>
+                        <a class="custom-cursor">Tenues coordonnées pour toute la famille</a>
+                        <a class="custom-cursor">Bébé Souvenirs</a>
+                        <a class="custom-cursor">Poussette</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--sports-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="sports">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Sports et Loisirs</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Vêtements de sport</a>
+                        <a class="custom-cursor">Camping et randonnée</a>
+                        <a class="custom-cursor">Fitness et musculation</a>
+                        <a class="custom-cursor">Golf</a>
+                        <a class="custom-cursor">Sport Accessoires</a>
+                        <a class="custom-cursor">Divertissement</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Sneakers</a>
+                        <a class="custom-cursor">De natation</a>
+                        <a class="custom-cursor">Sports nautiques</a>
+                        <a class="custom-cursor">Course à pied</a>
+                        <a class="custom-cursor">Patins à roulettes, planches à roulettes et trotinettes</a>
+                        <a class="custom-cursor">Autres sports et loisirs</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Vélo</a>
+                        <a class="custom-cursor">Instruments de musique</a>
+                        <a class="custom-cursor">Sports d'équipe</a>
+                        <a class="custom-cursor">Tir</a>
+                        <a class="custom-cursor">Cheval de course</a>
+                        <a class="custom-cursor">Sport Sacs</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">De pêche</a>
+                        <a class="custom-cursor">Chasse</a>
+                        <a class="custom-cursor">Sports de raquette</a>
+                        <a class="custom-cursor">Ski et snowboard</a>
+                        <a class="custom-cursor">Bowling</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--beauty-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom" id="beauty">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Beauté & Santé</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Accessoires et outils de manucure</a>
+                        <a class="custom-cursor">Soins capillaires et coiffants</a>
+                        <a class="custom-cursor">Tatouage et art corporel</a>
+                        <a class="custom-cursor">Papier Hygiénique</a>
+                        <a class="custom-cursor">Équipement de beauté</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Maquillage</a>
+                        <a class="custom-cursor">Rasage et épilation</a>
+                        <a class="custom-cursor">Bain et douche</a>
+                        <a class="custom-cursor">Outils et accessoires</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Soins Et Santé</a>
+                        <a class="custom-cursor">Produits érotiques</a>
+                        <a class="custom-cursor">Parfums et déodorants</a>
+                        <a class="custom-cursor">Mens Toilettage</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Soins de la peau</a>
+                        <a class="custom-cursor">Beauté Essentials</a>
+                        <a class="custom-cursor">Articles D'hygiène Bucco-dentaire</a>
+                        <a class="custom-cursor">Outils de soins de la peau</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!--others-->
+            <div class="bg-white px-1 px-lg-5 py-4 border-bottom d-none" id="others">
+                <a class="custom-cursor text-tomato h4 m-4 d-inline-block">Autres</a>
+                <div class="d-flex flex-wrap justify-content-between px-2">
+                    
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Accessoires et outils de manucure</a>
+                        <a class="custom-cursor">Soins capillaires et coiffants</a>
+                        <a class="custom-cursor">Tatouage et art corporel</a>
+                        <a class="custom-cursor">Papier Hygiénique</a>
+                        <a class="custom-cursor">Équipement de beauté</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Maquillage</a>
+                        <a class="custom-cursor">Rasage et épilation</a>
+                        <a class="custom-cursor">Bain et douche</a>
+                        <a class="custom-cursor">Outils et accessoires</a>
+                    </div>       
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Soins Et Santé</a>
+                        <a class="custom-cursor">Produits érotiques</a>
+                        <a class="custom-cursor">Parfums et déodorants</a>
+                        <a class="custom-cursor">Mens Toilettage</a>
+                    </div>
+
+                    <div class="col-auto px- pb-4 d-flex flex-column">
+                        <a class="custom-cursor">Apprentissage et éducation</a>
+                        <a class="custom-cursor">Jouets véhicules</a>
+                        <a class="custom-cursor">Jouets farce et attrape</a>
+                        <a class="custom-cursor">Passe-temps & Collectibles</a>
+                        <a class="custom-cursor">Jouets populaires</a>
+                    </div>
+                </div>
+
+            </div>
+            
         </div>
     </header>
 </body>
