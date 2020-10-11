@@ -59,7 +59,11 @@ tr {
     height: 100px;
 }
 
-.all-categories-header .custom-cursor {
+.all-categories-header .custom-cursor, footer .custom-cursor {
     white-space: nowrap;
     overflow: hidden;
+}
+
+footer {
+    background-color: lightgray;
 }
