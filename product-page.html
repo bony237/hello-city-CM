@@ -45,8 +45,34 @@
                         <span class="custom-cursor mx-2">
                             <i class="fa fa-heart-o"></i>&nbsp; Liste d'envies
                         </span>
-                        <span class="custom-cursor mx-2">
-                            <i class="fa fa-user-o"></i> <span>Compte</span> &nbsp;<i class="fa fa-caret-down ml-3"></i>
+                        
+                        <!--account tab-->
+                        <span class="mx-2 position-relative" id="account-tab">
+                            <span class="custom-cursor trigger-elm">
+                                <i class="fa fa-user-o"></i> <span>Compte</span> &nbsp;<i class="fa fa-caret-down ml-3"></i>
+                            </span>
+                            <span class="d-none flex-column position-absolute bg-white text-nowrap p-3 hide-infos border border-top-0">
+                                <!--welcome message-->
+                                <span class="font-weight-bold">Bienvenue chez Hello City</span>
+
+                                <!--login/logup btn-->
+                                <span class="border-bottom py-3">
+                                    <span class="px-4 btn btn-danger">S'inscrire</span>
+                                    <span class="px-3 btn btn-outline-danger">Se connecter</span>
+                                </span>
+
+                                
+
+                                <!--some options-->
+                                <span class="d-flex flex-column">
+                                    <a class="custom-cursor my-1">Mes commandes</a>
+                                    <a class="custom-cursor my-1">Centre de Messagerie</a>
+                                    <a class="custom-cursor my-1">Liste d'envies</a>
+                                    <a class="custom-cursor my-1">Mes Magasins favoris</a>
+                                    <a class="custom-cursor my-1">Mes bons de réduction</a>
+                                    <a class="custom-cursor my-1">Inviter des amis pour offrir 20€</a>
+                                </span>
+                            </span>
                         </span>
                     </span>
                 </div>
@@ -1191,5 +1217,26 @@
         </div>
     </footer>
 
+    <script src="./assets/js/jquery_v3.5.1.js"></script>
+
+    <script>
+        $('#account-tab').on('mouseover', function(event) {
+            $(this).find('.trigger-elm').css('color', 'tomato');
+            $('.hide-infos')
+                .removeClass('d-none')
+                .addClass('d-flex');
+
+            
+        });
+
+        $('#account-tab').on('mouseout', function(event) {
+            $(this).find('.trigger-elm').css('color', 'black');
+            $(event.currentTarget).find('.hide-infos')
+                    .removeClass('d-flex')
+                    .addClass('d-none');
+            
+            
+        });
+    </script>
 </body>
 </html>
