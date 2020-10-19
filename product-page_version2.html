@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product page</title>
+
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap-4.5.2-dist/css/bootstrap.css">
+    
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="./assets/css/product-page.css">
+</head>
+<body>
+    <header>
+        <div class="general-header">
+            <!--first header-->
+            <div class="border-bottom px-3" id="first-header">
+                <div class="py-2 pr-lg-5 mr-lg-4 d-flex flex-wrap flex-column flex-sm-row justify-content-end align-items-center">
+                    <span class="border-left px-2">
+                        <span class="custom-cursor mx-2">
+                            Sell on Hello City &nbsp;<i class="fa fa-caret-down"></i>
+                        </span>
+                    </span>
+                    <span class="border-left px-2">
+                        <span class="custom-cursor mx-2">
+                            Aide &nbsp;<i class="fa fa-caret-down"></i>
+                        </span>
+                        <span class="custom-cursor mx-2">
+                            Protection de l'acheteur
+                        </span>
+                        <span class="custom-cursor mx-2">
+                            <i class="fa fa-mobile"></i>&nbsp; App
+                        </span>
+                    </span>
+                    <span class="border-left px-2">
+                        <span class="custom-cursor mx-2">
+                            <i class="fa fa-flag-checkered"></i> / Français / EUR &nbsp;<i class="fa fa-caret-down"></i>
+                        </span>
+                    </span>
+                    <span class="border-left px-2">
+                        <span class="custom-cursor mx-2">
+                            <i class="fa fa-heart-o"></i>&nbsp; Liste d'envies
+                        </span>
+                        
+                        <!--account tab-->
+                        <span class="mx-2 position-relative" id="account-tab">
+                            <span class="custom-cursor trigger-elm">
+                                <i class="fa fa-user-o"></i> <span>Compte</span> &nbsp;<i class="fa fa-caret-down ml-3"></i>
+                            </span>
+                            <span class="d-none flex-column position-absolute bg-white text-nowrap p-3 hide-infos border border-top-0">
+                                <!--welcome message-->
+                                <span class="font-weight-bold">Bienvenue chez Hello City</span>
+
+                                <!--login/logup btn-->
+                                <span class="border-bottom py-3">
+                                    <span class="px-4 btn btn-danger">S'inscrire</span>
+                                    <span class="px-3 btn btn-outline-danger">Se connecter</span>
+                                </span>
+
+                                
+
+                                <!--some options-->
+                                <span class="d-flex flex-column">
+                                    <a class="custom-cursor my-1">Mes commandes</a>
+                                    <a class="custom-cursor my-1">Centre de Messagerie</a>
+                                    <a class="custom-cursor my-1">Liste d'envies</a>
+                                    <a class="custom-cursor my-1">Mes Magasins favoris</a>
+                                    <a class="custom-cursor my-1">Mes bons de réduction</a>
+                                    <a class="custom-cursor my-1">Inviter des amis pour offrir 20€</a>
+                                </span>
+                            </span>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <!--second header-->
+            <div class="d-flex flex-wrap justify-content-center align-items-center mx-2 mx-sm-5 my-4">
+                <!--logo + all categories dropdown-btn-->
+                <div class="d-flex mt-1 mr-5 bg-light">
+                    <!--logo img
+                    <div class="col-auto">
+                        <img src="" alt="" class="w-100">
+                    </div>-->
+                    <h1 class="logo-temp mx-3 font-weight-bold">HELLO CITY</h1>
+                    <!--dropdown-btn-->
+                    <div class="col-auto small custom-dropdown-btn text-secondary py-3 px-2 bg-ligh border d-inline-flex rounded">
+                        <i class="fa fa-bars fa-2x"></i> &nbsp; <i class="fa fa-caret-down fa-2x"></i>
+                    </div>
+                </div>
+
+                <!--search block-->
+                <div class="p-0 p-sm-auto my-3 d-flex col-sm-auto align-items-center align-items-sm-end">
+                    <!--search bar-->
+                    <div class="col">
+                        <form class="row m-0" id="search-bar">
+                            <input type="text" value="moto" class="col text-secondary mr-0 form-control py-2"><button class="col-auto text-white"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                        <div class="flex-wrap text-secondary d-none d-sm-flex">
+                            <span><a class="btn-link custom-cursor">projecteur</a> &nbsp;|</span>
+                            <span>&nbsp; <a class="btn-link custom-cursor"> 
+                                <span class="d-none d-md-inline">mobile</span> téléphone</a> &nbsp;|
+                            </span>
+                            <span>&nbsp; <a class="btn-link custom-cursor"> babouches <span class="d-none d-md-inline">de luxe femme</span> </a> &nbsp;|</span>
+                            <span>&nbsp; <a class="btn-link custom-cursor"> chaussure femme</a></span>
+                        </div>
+                    </div>
+
+                    <!--shopping box-->
+                    <div id="shopping-box" class="ml-0 pr-4 ml-sm-4">
+                        <span>
+                            <i class="fa fa-shopping-cart fa-5x d-none d-sm-inline"></i>
+                            <i class="fa fa-shopping-cart fa-3x d-sm-none"></i>
+                        </span>
+                    </div>
+                </div>   
+            </div>
+
+            <!--banner-->
+            <div>
+                <div class="bg-info text-white px-5 py-4" id="banner">
+                    <span class="h2 d-none d-sm-inline">TOUTES LES CATEGORIES</span>
+                    <span class="h4 d-sm-none">TOUTES LES CATEGORIES</span>
+                    <span class="ml-4">Achetez malin, vivez mieux!</span>
+                </div>
+                <div class="px-3 ml-3 ml-sm-0 px-sm-5 h6 my-3">
+                    <a href="#">Accueil</a> > <span>Toutes les Catégories</span>
+                </div>
+            </div>
+            
+            <!--all categories items (banner)-->
+            <div class="mx-5 my-4 d-none d-sm-block">
+                <table class="table table-bordered w-100 text-secondary bg-white">
+                    <!--ligne 1-->
+                    <tr>
+                        <td class="active align-middle"> <!--case 1 phone-->
+                            <a href="#phone" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Téléphones portables"> <i class="fa fa-mobile fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Téléphones portables</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 2 computer-->
+                            <a href="#computer" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Ordinateur et bureautique"> <i class="fa fa-laptop fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Ordinateurs</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 3 electronic-->
+                            <a href="#electronic" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Electronique"> <i class="fa fa-headphones fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Electronique</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 4 bijoux-->
+                            <a href="#bijoux" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Bijoux et Accessoires"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Bijoux et Accessoires</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 5-->
+                            <a href="#watch" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Montres"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Montres</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 6-->
+                            <a href="#house" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Maison & Animalerie"> <i class="fa fa-bath fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Maison & Animalerie</span></a>
+                        </td>
+                    </tr>
+
+                    <!--ligne 2-->
+                    <tr>
+                        <td class="align-middle"> <!--case 1 bags-->
+                            <a href="#bags" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Baggages et sacs"> <i class="fa fa-shopping-bag fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Baggages et sacs</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 2 shoes-->
+                            <a href="#shoes" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Chaussures"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Chaussures</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 3 mother-child-->
+                            <a href="#mother-child" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Mère et enfant"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Mère et enfant</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 4 sports-->
+                            <a href="#sports" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Sports et Loisirs"> <i class="fa fa-futbol-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Sports et Loisirs</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 5 beauty-->
+                            <a href="#beauty" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Beauté & Santé"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Beauté & Santé</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 6 others-->
+                            <a href="#others" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Plus de Catégories"> <i class="fa fa-ellipsis-h fa-2x ml-2 mr-4"></i> <span class="d-none d-md-inline">Plus de Catégories</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <footer class="mt-3">
+        <div class="mx-5 py-4 d-flex flex-wrap justify-content-between">
+            <!--infos hello-city-->
+            <div class="col px-0 mb-3">
+                <h5>Informations sur HELLO CITY</h5>
+                <p class="text-black-50">
+                    <a class="custom-cursor text-decoration-none">Service client</a>, 
+                    <a class="custom-cursor text-decoration-none">Litiges et rapports</a>,
+                    <a class="custom-cursor text-decoration-none">Protection de l'acheteur</a>,
+                    <a class="custom-cursor text-decoration-none">Signaler une infraction des DPI</a>
+                </p>
+                <p class="">
+                    <span class="btn btn-success font-weight-bold mb-2"> 
+                        <span class="h5"><i class="fa fa-android" aria-hidden="true"></i> Google Play </span>
+                    </span>
+
+                    <span class="btn btn-secondary font-weight-bold mb-2"> 
+                        <span class="h5"><i class="fa fa-apple" aria-hidden="true"></i> App Store </span>
+                    </span>
+                </p>
+            </div>
+
+            <!--catégories-->
+            <div class="col px-0 mb-3">
+                <h5>Parcourir par catégorie</h5>
+                <p class="text-black-50">
+                    <a class="custom-cursor text-decoration-none">Les plus populaires</a>, 
+                    <a class="custom-cursor text-decoration-none">Produits</a>, 
+                    <a class="custom-cursor text-decoration-none">Promotions</a>, 
+                    <a class="custom-cursor text-decoration-none">Bas Prix</a>, 
+                    <a class="custom-cursor text-decoration-none">Comparer</a>, 
+                    <a class="custom-cursor text-decoration-none">Commentaires</a>, 
+                    <a class="custom-cursor text-decoration-none">Blog, Seller Portal</a>, 
+                    <a class="custom-cursor text-decoration-none">BLACK FRIDAY</a>, 
+                </p>
+            </div>
+        </div>
+
+        <!--copyright section-->
+        <div class="bg-dark text-light small py-2 px-5">
+            <a class="text-reset">Protection de la Propriété Intellectuelle</a> - 
+            <a class="text-reset">Politique de Confidentialité</a> - 
+            <a class="text-reset">Plan du site</a> - 
+            <a class="text-reset">Conditions d’Utilisation et Informations Légales</a> - 
+            <a class="text-reset">Guide pour Forces de l'Ordre</a> - 
+            <a class="text-reset">Information supplémentaire sur HELLO CITY</a> . Tous droits réservés
+        </div>
+    </footer>
+
+    <script src="./assets/js/jquery_v3.5.1.js"></script>
+
+    <script>
+        $('#account-tab').on('mouseover', function(event) {
+            $(this).find('.trigger-elm').css('color', 'tomato');
+            $('.hide-infos')
+                .removeClass('d-none')
+                .addClass('d-flex');
+
+            
+        });
+
+        $('#account-tab').on('mouseout', function(event) {
+            $(this).find('.trigger-elm').css('color', 'black');
+            $(event.currentTarget).find('.hide-infos')
+                    .removeClass('d-flex')
+                    .addClass('d-none');
+            
+            
+        });
+    </script>
+
+</body>
+</html>
