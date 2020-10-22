@@ -186,6 +186,103 @@
         </div>
     </header>
 
+    <!--purchase block-->
+    <div id="purchase-section">
+        <!--command setting-->
+        <div class="col-8 ml-5 p-0">
+            <!--delivering infos-->
+            <div class="p-5 bg-white shadow-sm rounded-lg">
+                <form>
+                    <div class="font-weight-bold h4 mb-5">Informations sur la livraison</div>
+
+                    <div class="form-group h5">
+                        <label class="font-weight-bold mx-1">Destinataire</label>
+                        <div class="form-group d-flex">
+                            <input type="text" name="nom" placeholder="Nom et prénom" class="form-control col mx-1">
+                            <input type="tel" name="tel" placeholder="Numéro de téléphone portable" class="form-control col mx-1">
+                        </div>
+                    </div>
+
+                    <div class="form-group h5">
+                        <label class="font-weight-bold mx-1">Adresse</label>
+                        <div class="form-group d-flex">
+                            <input type="text" name="address" placeholder="Rue et numéro de la rue" class="form-control col mx-1">
+                            <input type="text" name="address-pseudo" placeholder="Appartement, bâtiment, lieu-dit, etc (optionnel)" class="form-control col mx-1">
+                        </div>
+
+                        <div class="form-group d-flex">
+                            <select name="country" class="form-control col mx-1">
+                                <option>Country</option>
+                            </select>
+                            <input type="text" name="location-state" placeholder="État/Province/Région" class="form-control col mx-1">
+                            <input type="text" name="town" placeholder="Ville" class="form-control col mx-1">
+                            <input type="number" name="postal-code" placeholder="Code postal" class="form-control col mx-1">
+                        </div>
+                    </div>
+
+                    <div class="form-group mx-1 mt-5">
+                        
+                        <div class="custom-control custom-checkbox my-3">
+                            <input type="checkbox" name="default-check" id="default-checkbox" value="yes" class="form-check-inline custom-control-input"> 
+                            <label for="default-checkbox" class="custom-control-label">
+                                Définir par défaut
+                            </label>
+                        </div>
+
+                        <input type="submit" value="Confirmer" class="btn btn-lg btn-danger px-5">
+                    </div>
+                </form>
+            </div>
+
+            <!--product infos-->
+            <div class="custom-bg-gray my-3 px-5 py-4 rounded-lg">
+                <div class="rounded-sm bg-white d-inline-block small px-2 mb-3">
+                    <span> <i class="fa fa-exclamation-circle text-primary"></i> Ce produit ne peut pas être livré dans le pays sélectionné.</span>
+                </div>
+                
+                <div class="d-flex">
+                    <!--image product-->
+                    <div class="col-2 p-0">
+                        <img src="./assets/images/chemise.jpg" alt="chemise" class="w-100 rounded-sm">
+                    </div>
+
+                    <!--description product-->
+                    <div class="col-7 text-secondary">
+                        <!--general description-->
+                        <div>
+                            Jeansian-chemises pour hommes, manches longues, décontracté Slim-Fit, avec fermeture éclair,
+                            décoration (sans poches), printemps-automne, décontracté, Z015
+                        </div>
+
+                        <!--descriptive interesting values-->
+                        <div class="my-2">
+                            <span>
+                                <span class="mr-2">
+                                    <span class="font-weight-bold">Color</span> <span>8615-LightBlue <img src="./assets/images/chemise.jpg" alt="chemise" width="25px" height="25px" class="align-bottom"></span>
+                                </span>
+                                <span class="mr-2">
+                                    <span class="font-weight-bold">Size</span> <span>US XL</span>
+                                </span>
+                                <span class="mr-2">
+                                    <span class="font-weight-bold">Ships From</span> <span>China</span>
+                                </span>
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="font-weight-bold">€ 12,96</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!--command resume-->
+        <div>
+
+        </div>
+    </div>
+
     <footer class="d-none mt-3">
         <div class="mx-5 py-4 d-flex flex-wrap justify-content-between">
             <!--infos hello-city-->
