@@ -187,9 +187,9 @@
     </header>
 
     <!--purchase block-->
-    <div id="purchase-section">
+    <div id="purchase-section" class="d-flex justify-content-between px-5">
         <!--command setting-->
-        <div class="col-8 ml-5 p-0">
+        <div class="col-8 p-0">
             <!--delivering infos-->
             <div class="p-5 bg-white shadow-sm rounded-lg">
                 <form>
@@ -277,13 +277,56 @@
             </div>
         </div>
         
-        <!--command resume-->
-        <div>
+        <div>&nbsp; &nbsp; &nbsp;</div>
 
+        <!--command resume-->
+        <div class="col position-relative" id="command-resume">
+            <div>
+                <!---->
+                <div class="h5 p-5 bg-white shadow-sm rounded-lg">
+                    <!--title-->
+                    <h2 class="font-weight-bold d-inline-block">Résumé des commandes</h2>
+
+                    <div>
+                        <span class="d-flex justify-content-between my-4">
+                            <span> <i class="text-danger fa fa-drivers-license-o"></i> Coupon sélection</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                        <span class="d-flex justify-content-between my-4">
+                            <span> <i class="text-danger fa fa-drivers-license-o"></i> Coupon Hello City</span> <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </span>
+                    </div>
+
+                    <div class="my-4 pb-4 border-bottom">
+                        <h6>Code promo</h6>
+                        <form class="d-flex justify-content-between">
+                            <input type="text" name="code-promo" class="form-control col">
+                            &nbsp;
+                            <input type="submit" value="Confirmer" class="btn btn-outline-danger col">
+                        </form>
+                    </div>
+
+                    <h6 class="font-weight-bold d-flex align-items-center justify-content-between mb-5">
+                        <span class="h5 font-weight-bold">Total</span> <span class="h2 font-weight-bold">€ 0,00</span>
+                    </h6>
+
+                    <button class="btn btn-lg btn-block btn-outline-secondary disabled">Commander</button>
+                </div>
+
+                <!---->
+                <div class="text-secondary small">
+                    En cliquant sur "Commander", je confirme avoir lu et accepté les <a class="text-reset">termes et conditions</a>.
+                </div>
+
+                <!---->
+                <div class="text-center border border-dark rounded-lg my-3 p-4">
+                    <h4 class="text-center"><i class="text-success fa fa-check-square-o" aria-hidden="true"></i> Hello City</h4>
+                    <p class="text-dark px-5 py-2">Hello City protège vos informations et vos paiements</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <footer class="d-none mt-3">
+    <footer class="d-non mt-3">
         <div class="mx-5 py-4 d-flex flex-wrap justify-content-between">
             <!--infos hello-city-->
             <div class="col px-0 mb-3">
