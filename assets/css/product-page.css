@@ -12,6 +12,10 @@ body {
   color: inherit;
 }
 
+.custom-cursor.active {
+  color: tomato;
+}
+
 .custom-cursor:hover {
   cursor: pointer;
   color: tomato !important;
@@ -84,3 +88,80 @@ footer {
   top: 99%;
   z-index: 10;
 }
+
+/*All hero image of FAQ topic
+*/
+#hero-faq.delivery {
+  background: url("../images/Hero-delivery.jpg") no-repeat center/cover;
+  height: 200px;
+  position: relative;
+  z-index: 0;
+}
+
+#hero-faq.returns {
+  background: url("../images/Hero-returns.JPG") no-repeat center/cover;
+  height: 200px;
+  position: relative;
+  z-index: 0;
+}
+
+#hero-faq.order {
+  background: url("../images/Hero-order.JPG") no-repeat center/cover;
+  height: 200px;
+  position: relative;
+  z-index: 0;
+}
+
+#hero-faq.products {
+  background: url("../images/Hero-products.JPG") no-repeat center/cover;
+  height: 200px;
+  position: relative;
+  z-index: 0;
+}
+
+#hero-faq.payment {
+  background: url("../images/Hero-payment.JPG") no-repeat center/cover;
+  height: 200px;
+  position: relative;
+  z-index: 0;
+}
+
+#hero-faq.technical {
+  background: url("../images/Hero-technical.JPG") no-repeat center/cover;
+  height: 200px;
+  position: relative;
+  z-index: 0;
+}
+
+/*End All hero image of FAQ topic
+*/
+
+#hero-faq::before {
+  content: "";
+  color: white;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(45, 45, 45, 0.42);
+}
+
+.custom-border-gray-top {
+  border-top: #c2c2c2a6 0.5px solid;
+}
+
+#get-in-touch-hero {
+  width: 100%;
+  height: 175px;
+  background: url("../images/get-in-touch.JPG") center/ 100% no-repeat;
+}
+
+#faq-menu-block .topics i {
+  width: 40px;
+}
+
+/*@media (min-width: 767.98px) and (max-width: 1199.98px) {
+  #faq-menu-block {
+    font-size: small;
+  }
+}*/
