@@ -126,7 +126,7 @@
             </div>
             
             <!--all categories items (banner)-->
-            <div class="mx-5 my-4 d-none d-sm-block">
+            <div class="mx-5 my-4 d-none">
                 <table class="table table-bordered w-100 text-secondary bg-white">
                     <!--ligne 1-->
                     <tr>
@@ -187,9 +187,9 @@
     </header>
 
     <!--purchase block-->
-    <div id="purchase-section" class="d-flex justify-content-between px-5">
+    <div id="purchase-section" class="d-flex justify-content-center justify-content-lg-between flex-wrap py-4 px-5">
         <!--command setting-->
-        <div class="col-8 p-0">
+        <div class="col-12 col-md-8 p-0">
             <!--delivering infos-->
             <div class="p-5 bg-white shadow-sm rounded-lg">
                 <form>
@@ -197,30 +197,30 @@
 
                     <div class="form-group h5">
                         <label class="font-weight-bold mx-1">Destinataire</label>
-                        <div class="form-group d-flex">
-                            <input type="text" name="nom" placeholder="Nom et prénom" class="form-control col mx-1">
-                            <input type="tel" name="tel" placeholder="Numéro de téléphone portable" class="form-control col mx-1">
+                        <div class="form-group d-flex flex-wrap flex-column flex-sm-row">
+                            <input type="text" name="nom" placeholder="Nom et prénom" class="form-control col mx-1 my-2 my-sm-auto">
+                            <input type="tel" name="tel" placeholder="Numéro de téléphone portable" class="form-control col mx-1 my-2 my-sm-auto">
                         </div>
                     </div>
 
                     <div class="form-group h5">
                         <label class="font-weight-bold mx-1">Adresse</label>
-                        <div class="form-group d-flex">
-                            <input type="text" name="address" placeholder="Rue et numéro de la rue" class="form-control col mx-1">
-                            <input type="text" name="address-pseudo" placeholder="Appartement, bâtiment, lieu-dit, etc (optionnel)" class="form-control col mx-1">
+                        <div class="form-group d-flex flex-wrap flex-column flex-sm-row">
+                            <input type="text" name="address" placeholder="Rue et numéro de la rue" class="form-control col mx-1 my-2 my-sm-auto">
+                            <input type="text" name="address-pseudo" placeholder="Appartement, bâtiment, lieu-dit, etc (optionnel)" class="form-control col mx-1 my-2 my-sm-auto">
                         </div>
 
-                        <div class="form-group d-flex">
-                            <select name="country" class="form-control col mx-1">
+                        <div class="form-group d-flex flex-wrap flex-column flex-sm-row">
+                            <select name="country" class="form-control col mx-1 my-2 my-sm-auto d-none">
                                 <option>Country</option>
                             </select>
-                            <input type="text" name="location-state" placeholder="État/Province/Région" class="form-control col mx-1">
-                            <input type="text" name="town" placeholder="Ville" class="form-control col mx-1">
-                            <input type="number" name="postal-code" placeholder="Code postal" class="form-control col mx-1">
+                            <input type="text" name="location-state" placeholder="État/Province/Région" class="form-control col mx-1 my-2 my-sm-auto">
+                            <input type="text" name="town" placeholder="Ville" class="form-control col mx-1 my-2 my-sm-auto">
+                            <input type="number" name="postal-code" placeholder="Code postal" class="form-control col mx-1 my-2 my-sm-auto">
                         </div>
                     </div>
 
-                    <div class="form-group mx-1 mt-5">
+                    <div class="form-group mx-1 mt-4 mt-sm-5">
                         
                         <div class="custom-control custom-checkbox my-3">
                             <input type="checkbox" name="default-check" id="default-checkbox" value="yes" class="form-check-inline custom-control-input"> 
@@ -240,14 +240,14 @@
                     <span> <i class="fa fa-exclamation-circle text-primary"></i> Ce produit ne peut pas être livré dans le pays sélectionné.</span>
                 </div>
                 
-                <div class="d-flex">
+                <div class="d-flex flex-wrap-reverse flex-sm-nowrap">
                     <!--image product-->
-                    <div class="col-2 p-0">
+                    <div class="col-2 p-0 d-none d-sm-block">
                         <img src="./assets/images/chemise.jpg" alt="chemise" class="w-100 rounded-sm">
                     </div>
 
                     <!--description product-->
-                    <div class="col-7 text-secondary">
+                    <div class="col-auto col-sm-7 text-secondary">
                         <!--general description-->
                         <div>
                             Jeansian-chemises pour hommes, manches longues, décontracté Slim-Fit, avec fermeture éclair,
@@ -277,10 +277,10 @@
             </div>
         </div>
         
-        <div>&nbsp; &nbsp; &nbsp;</div>
+        <div class="d-none d-lg-block">&nbsp; &nbsp; &nbsp;</div>
 
         <!--command resume-->
-        <div class="col position-relative p-0" id="command-resume">
+        <div class="col-12 col-md-8 col-lg position-relative p-0" id="command-resume">
             <div>
                 <!---->
                 <div class="h5 p-5 bg-white shadow-sm rounded-lg">
@@ -326,10 +326,10 @@
         </div>
     </div>
 
-    <footer class="d-non mt-3">
+    <footer class="mt-3">
         <div class="mx-5 py-4 d-flex flex-wrap justify-content-between">
             <!--infos hello-city-->
-            <div class="col px-0 mb-3">
+            <div class="col px-3 mb-3">
                 <h5>Informations sur HELLO CITY</h5>
                 <p class="text-black-50">
                     <a class="custom-cursor text-decoration-none">Service client</a>, 
@@ -349,7 +349,7 @@
             </div>
 
             <!--catégories-->
-            <div class="col px-0 mb-3">
+            <div class="col px-3 mb-3">
                 <h5>Parcourir par catégorie</h5>
                 <p class="text-black-50">
                     <a class="custom-cursor text-decoration-none">Les plus populaires</a>, 
