@@ -205,14 +205,14 @@ footer {
   z-index: 100;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+#categories .swiper-button-prev,
+#categories .swiper-button-next {
   all: unset;
   cursor: pointer;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
+#categories .swiper-button-prev::after,
+#categories .swiper-button-next::after {
   font-size: small;
   font-weight: bold;
 }
