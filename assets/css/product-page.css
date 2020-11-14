@@ -165,3 +165,61 @@ footer {
     font-size: small;
   }
 }*/
+
+#some-great-categories {
+  max-height: 120px;
+  overflow: hidden;
+}
+
+#some-great-categories a {
+  max-width: 150px;
+  font-size: small;
+}
+
+#quick-marketing-block > div:first-child {
+  height: 200px;
+}
+
+#quick-marketing-block .swiper-slide {
+  background: url("../images/quick-img-marketing.jpg") center/ cover border-box
+    no-repeat;
+}
+
+#categories {
+  min-width: 200px;
+}
+
+#categories .swiper-slide a {
+  height: 2.6em;
+  display: flex;
+  align-items: center;
+
+  background-color: white;
+  text-decoration: none;
+}
+
+#categories .swiper-slide a:hover {
+  font-weight: bold;
+  box-shadow: -12px 2px 12px 0 rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 100;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  all: unset;
+  cursor: pointer;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: small;
+  font-weight: bold;
+}
+
+#sub-categories {
+  top: 1px;
+  left: -25px;
+  z-index: 3;
+  width: max-content;
+}

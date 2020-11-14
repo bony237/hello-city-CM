@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap-4.5.2-dist/css/bootstrap.css">
+
+    <!--swiper.css-->
+    <link rel="stylesheet" href="./assets/css/swiper/swiper.6.3.5.css">
+    
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="./assets/css/product-page.css">
+</head>
+<body>
+    <header>
+        <div class="general-header">
+            <!--first header-->
+            <div class="border-bottom px-3" id="first-header">
+                <div class="py-2 pr-lg-5 mr-lg-4 d-flex flex-wrap flex-row justify-content-center align-items-center">
+                    <span class="px-2">
+                        <span class="custom-cursor mx-2">
+                            <i class="fa fa-bars"></i> Catégories &nbsp;<i class="fa fa-angle-down"></i>
+                        </span>
+                    </span>
+                    <span class="border-left px-2">
+                        <span class="custom-cursor mx-2">
+                            Ready to Ship &nbsp;
+                        </span>
+                    </span>
+                    <span class="px-2">
+                        <span class="custom-cursor mx-2">
+                            Trade Shows
+                        </span>
+                    </span>
+                    <span class="px-2">
+                        <span class="custom-cursor mx-2">
+                            &nbsp; Personal Protective Equipement
+                        </span>
+                    </span>
+                    <span class="px-2">
+                        <span class="custom-cursor mx-2">
+                            Services &nbsp;<i class="fa fa-angle-down"></i>
+                        </span>
+                    </span>
+                    <span class="px-2">
+                        <span class="custom-cursor mx-2">
+                            <i class="fa fa-heart-o"></i>&nbsp; Sell on Hello City
+                        </span>
+                        
+                        <!--account tab-->
+                        <span class="mx-2 custom-cursor">
+                            <span>Help</span> &nbsp; <i class="fa fa-angle-down"></i>
+                        </span>
+                    </span>
+
+                    <span class="mx-5 px-5 d-none d-sm-inline">&nbsp;</span>
+
+                    <span class="px-2 text-secondary">
+                        <span class="custom-cursor mx-2">
+                            <i class="fa fa-mobile"></i>&nbsp; Get the App
+                        </span>
+                        
+                        <!--account tab-->
+                        <span class="mx-2 custom-cursor">
+                            <span>English-USD</span> &nbsp;<i class="fa fa-angle-down ml-3"></i>
+                        </span>
+                    </span>
+                </div>
+            </div>
+
+            <!--second header-->
+            <div class="d-none flex-wrap justify-content-center align-items-center mx-2 mx-sm-5 my-4">
+                <!--logo + all categories dropdown-btn-->
+                <div class="d-flex mt-1 mr-5 bg-light">
+                    <!--logo img
+                    <div class="col-auto">
+                        <img src="" alt="" class="w-100">
+                    </div>-->
+                    <h1 class="logo-temp mx-3 font-weight-bold">HELLO CITY</h1>
+                    <!--dropdown-btn-->
+                    <div class="col-auto small custom-dropdown-btn text-secondary py-3 px-2 bg-ligh border d-inline-flex rounded">
+                        <i class="fa fa-bars fa-2x"></i> &nbsp; <i class="fa fa-caret-down fa-2x"></i>
+                    </div>
+                </div>
+
+                <!--search block-->
+                <div class="p-0 p-sm-auto my-3 d-flex col-sm-auto align-items-center align-items-sm-end">
+                    <!--search bar-->
+                    <div class="col">
+                        <form class="row m-0" id="search-bar">
+                            <input type="text" value="moto" class="col text-secondary mr-0 form-control py-2"><button class="col-auto text-white"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        </form>
+                        <div class="flex-wrap text-secondary d-none d-sm-flex">
+                            <span><a class="btn-link custom-cursor">projecteur</a> &nbsp;|</span>
+                            <span>&nbsp; <a class="btn-link custom-cursor"> 
+                                <span class="d-none d-md-inline">mobile</span> téléphone</a> &nbsp;|
+                            </span>
+                            <span>&nbsp; <a class="btn-link custom-cursor"> babouches <span class="d-none d-md-inline">de luxe femme</span> </a> &nbsp;|</span>
+                            <span>&nbsp; <a class="btn-link custom-cursor"> chaussure femme</a></span>
+                        </div>
+                    </div>
+
+                    <!--shopping box-->
+                    <div id="shopping-box" class="ml-0 pr-4 ml-sm-4">
+                        <span>
+                            <i class="fa fa-shopping-cart fa-5x d-none d-sm-inline"></i>
+                            <i class="fa fa-shopping-cart fa-3x d-sm-none"></i>
+                        </span>
+                    </div>
+                </div>   
+            </div>
+
+            <!--banner-->
+            <div class="d-none">
+                <div class="bg-info text-white px-5 py-4" id="banner">
+                    <span class="h2 d-none d-sm-inline">TOUTES LES CATEGORIES</span>
+                    <span class="h4 d-sm-none">TOUTES LES CATEGORIES</span>
+                    <span class="ml-4">Achetez malin, vivez mieux!</span>
+                </div>
+                <div class="px-3 ml-3 ml-sm-0 px-sm-5 h6 my-3">
+                    <a href="#">Accueil</a> > <span>Toutes les Catégories</span>
+                </div>
+            </div>
+            
+            <!--all categories items (banner)-->
+            <div class="mx-5 my-4 d-none">
+                <table class="table table-bordered w-100 text-secondary bg-white">
+                    <!--ligne 1-->
+                    <tr>
+                        <td class="active align-middle"> <!--case 1 phone-->
+                            <a href="#phone" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Téléphones portables"> <i class="fa fa-mobile fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Téléphones portables</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 2 computer-->
+                            <a href="#computer" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Ordinateur et bureautique"> <i class="fa fa-laptop fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Ordinateurs</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 3 electronic-->
+                            <a href="#electronic" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Electronique"> <i class="fa fa-headphones fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Electronique</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 4 bijoux-->
+                            <a href="#bijoux" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Bijoux et Accessoires"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Bijoux et Accessoires</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 5-->
+                            <a href="#watch" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Montres"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Montres</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 6-->
+                            <a href="#house" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Maison & Animalerie"> <i class="fa fa-bath fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Maison & Animalerie</span></a>
+                        </td>
+                    </tr>
+
+                    <!--ligne 2-->
+                    <tr>
+                        <td class="align-middle"> <!--case 1 bags-->
+                            <a href="#bags" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Baggages et sacs"> <i class="fa fa-shopping-bag fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Baggages et sacs</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 2 shoes-->
+                            <a href="#shoes" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Chaussures"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Chaussures</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 3 mother-child-->
+                            <a href="#mother-child" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Mère et enfant"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Mère et enfant</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 4 sports-->
+                            <a href="#sports" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Sports et Loisirs"> <i class="fa fa-futbol-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Sports et Loisirs</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 5 beauty-->
+                            <a href="#beauty" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Beauté & Santé"> <i class="fa fa-window-close-o fa-3x ml-2 mr-4"></i> <span class="d-none d-md-inline">Beauté & Santé</span></a>
+                        </td>
+
+                        <td class="align-middle"> <!--case 6 others-->
+                            <a href="#others" class="d-flex align-items-center flex-wrap justify-content-center justify-content-md-start custom-cursor" title="Plus de Catégories"> <i class="fa fa-ellipsis-h fa-2x ml-2 mr-4"></i> <span class="d-none d-md-inline">Plus de Catégories</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </header>
+
+    <!-- categories block-->
+    <div id="main-block" class="px-1 px-sm-3 px-md-5 py-5 d-flex flex-column flex-sm-row align-items-start justify-content-between">
+        
+        <!--categories block-->
+        <div class="col-auto col-sm h5 h-100 swiper-container ml-n2 ml-sm-0 pl-4 pb-3" id="categories">
+            
+                <div class="d-flex p-3 justify-content-between shadow-sm bg-white rounded-top">
+                        <strong>CATEGORIES</strong> 
+                        <span><span class="swiper-button-prev"> </span> &nbsp; <span class="swiper-button-next"> </span></span>
+                </div>
+
+                <div class="swiper-wrapper shadow-sm">
+                        <div class="swiper-slide d-flex flex-column">
+                            <a class="custom-cursor px-3"> <span>Element of slide 1 &nbsp;</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 1 &nbsp;</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 1 &nbsp;</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 1 &nbsp;</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 1 &nbsp;</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 1 &nbsp;</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 1 &nbsp;</span> <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="swiper-slide d-flex flex-column">
+                            <a class="custom-cursor px-3"> <span>Element of slide 2 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 2 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 2 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 2 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 2 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 2 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 2 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+
+                        <div class="swiper-slide d-flex flex-column">
+                            <a class="custom-cursor px-3"> <span>Element of slide 3 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 3 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 3 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 3 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 3 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 3 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                            <a class="custom-cursor px-3"> <span>Element of slide 3 &nbsp;</span> <i class="fa fa-angle-right"
+                                    aria-hidden="true"></i></a>
+                        </div>
+                </div>
+
+                <div class="rounded-bottom p-1"> </div>           
+        </div>
+        
+        <div class="d-none d-sm-block">&nbsp; &nbsp; </div>
+
+        <!--rapid marketing block-->
+        <div class="col col-sm-7 col-md-8 col-lg-9 h-100 p-0 position-relative" id="quick-marketing-block">
+            <!--swiper block-->
+            <div>
+                <!-- Slider main container -->
+                <div class="swiper-container rounded-lg h-100 shadow-sm">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                        <div class="swiper-slide"></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="text-secondary swiper-button-prev"></div>
+                    <div class="text-secondary swiper-button-next"></div>
+                                   
+                </div>
+            </div>
+
+            <!--some great categories-->
+            <div id="some-great-categories" class="d-flex flex-wrap justify-content-around align-items-center bg-white p-2 mt-4 rounded-lg shadow-sm">
+                <a class="custom-cursor text-decoration-none d-flex flex-column align-items-center p-2">
+                    <img src="./assets/images/some-category.JPG" alt="category-image" width="50px" height="50px">
+                    <span class="mt-2 text-center">Agricultural Machinery & Equipment</span>
+                </a>
+
+                <a class="custom-cursor text-decoration-none d-flex flex-column align-items-center p-2">
+                    <img src="./assets/images/some-category.JPG" alt="category-image" width="50px" height="50px">
+                    <span class="mt-2 text-center">Agricultural Machinery & Equipment</span>
+                </a>
+
+                <a class="custom-cursor text-decoration-none d-flex flex-column align-items-center p-2">
+                    <img src="./assets/images/some-category.JPG" alt="category-image" width="50px" height="50px">
+                    <span class="mt-2 text-center">Agricultural Machinery & Equipment</span>
+                </a>
+
+
+                <a class="custom-cursor text-decoration-none d-flex flex-column align-items-center p-2">
+                    <img src="./assets/images/some-category.JPG" alt="category-image" width="50px" height="50px">
+                    <span class="mt-2 text-center">Agricultural Machinery & Equipment</span>
+                </a>
+
+
+                <a class="custom-cursor text-decoration-none d-flex flex-column align-items-center p-2">
+                    <img src="./assets/images/some-category.JPG" alt="category-image" width="50px" height="50px">
+                    <span class="mt-2 text-center">Agricultural Machinery & Equipment</span>
+                </a>
+
+
+                <a class="custom-cursor text-decoration-none d-flex flex-column align-items-center p-2">
+                    <img src="./assets/images/some-category.JPG" alt="category-image" width="50px" height="50px">
+                    <span class="mt-2 text-center">Agricultural Machinery & Equipment</span>
+                </a>
+            </div>
+
+            <div class="d-none d-sm-block">
+                <div class="position-absolute rounded-lg text-nowrap bg-white border shadow p-4 d-none flex-column h-100" id="sub-categories">
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                    <a class="custom-cursor text-decoration-none my-1 overflow-hidden">Apparel & Textile Machinery Parts</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <footer class="mt-3">
+        <div class="mx-5 py-4 d-flex flex-wrap justify-content-between">
+            <!--infos hello-city-->
+            <div class="col px-3 mb-3">
+                <h5>Informations sur HELLO CITY</h5>
+                <p class="text-black-50">
+                    <a class="custom-cursor text-decoration-none">Service client</a>, 
+                    <a class="custom-cursor text-decoration-none">Litiges et rapports</a>,
+                    <a class="custom-cursor text-decoration-none">Protection de l'acheteur</a>,
+                    <a class="custom-cursor text-decoration-none">Signaler une infraction des DPI</a>
+                </p>
+                <p class="">
+                    <span class="btn btn-success font-weight-bold mb-2"> 
+                        <span class="h5"><i class="fa fa-android" aria-hidden="true"></i> Google Play </span>
+                    </span>
+
+                    <span class="btn btn-secondary font-weight-bold mb-2"> 
+                        <span class="h5"><i class="fa fa-apple" aria-hidden="true"></i> App Store </span>
+                    </span>
+                </p>
+            </div>
+
+            <!--catégories-->
+            <div class="col px-3 mb-3">
+                <h5>Parcourir par catégorie</h5>
+                <p class="text-black-50">
+                    <a class="custom-cursor text-decoration-none">Les plus populaires</a>, 
+                    <a class="custom-cursor text-decoration-none">Produits</a>, 
+                    <a class="custom-cursor text-decoration-none">Promotions</a>, 
+                    <a class="custom-cursor text-decoration-none">Bas Prix</a>, 
+                    <a class="custom-cursor text-decoration-none">Comparer</a>, 
+                    <a class="custom-cursor text-decoration-none">Commentaires</a>, 
+                    <a class="custom-cursor text-decoration-none">Blog, Seller Portal</a>, 
+                    <a class="custom-cursor text-decoration-none">BLACK FRIDAY</a>, 
+                </p>
+            </div>
+        </div>
+
+        <!--copyright section-->
+        <div class="bg-dark text-light small py-2 px-5">
+            <a class="text-reset">Protection de la Propriété Intellectuelle</a> - 
+            <a class="text-reset">Politique de Confidentialité</a> - 
+            <a class="text-reset">Plan du site</a> - 
+            <a class="text-reset">Conditions d’Utilisation et Informations Légales</a> - 
+            <a class="text-reset">Guide pour Forces de l'Ordre</a> - 
+            <a class="text-reset">Information supplémentaire sur HELLO CITY</a> . Tous droits réservés
+        </div>
+    </footer>
+
+    <script src="./assets/js/jquery/jquery_v3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js" integrity="sha512-MQkEjxbZvzs4TX8ES4/tTIyaYdtDlJzVocnPo0GoysTR0jCmNg0P2is7uqpCoWxmoS9X84CDVzuWgZD/R/Q2oQ==" crossorigin="anonymous"></script>
+    
+    <script src="./assets/js/swiper/swiper.6.3.5.js"></script>
+    <script src="./assets/js/homePage.js"></script>
+
+</body>
+</html>
