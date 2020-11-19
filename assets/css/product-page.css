@@ -223,3 +223,7 @@ footer {
   z-index: 3;
   width: max-content;
 }
+
+.custom-rounded-lg {
+  border-radius: 1em;
+}

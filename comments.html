@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="./assets/css/bootstrap-4.5.2-dist/css/bootstrap.css">
+
+    <!--swiper.css-->
+    <link rel="stylesheet" href="./assets/css/swiper/swiper.6.3.5.css">
+    
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--custom css-->
+    <link rel="stylesheet" href="./assets/css/product-page.css">
+</head>
+<body>
+    <header>
+        <div class="general-header">
+            <!--first header-->
+            <div class="border-bottom px-3" id="first-header">
+                <div class="py-2 pr-lg-5 mr-lg-4 d-flex flex-wrap flex-row justify-content-center align-items-center">
+                    <span class="px-2">
+                        <span class="custom-cursor mx-2">
+                            <i class="fa fa-bars"></i> Catégories &nbsp;<i class="fa fa-angle-down"></i>
+                        </span>
+                    </span>
+                    <span class="border-left px-2">
+                        <span class="custom-cursor mx-2">
+                            Ready to Ship &nbsp;
+                        </span>
+                    </span>
+                    <span class="px-2">
+                        <span class="custom-cursor mx-2">
+                            Trade Shows
+                        </span>
+                    </span>
+                    <span class="px-2">
+                        <span class="custom-cursor mx-2">
+                            &nbsp; Personal Protective Equipement
+                        </span>
+                    </span>
+                    <span class="px-2">
+                        <span class="custom-cursor mx-2">
+                            Services &nbsp;<i class="fa fa-angle-down"></i>
+                        </span>
+                    </span>
+                    <span class="px-2">
+                        <span class="custom-cursor mx-2">
+                            <i class="fa fa-heart-o"></i>&nbsp; Sell on Hello City
+                        </span>
+                        
+                        <!--account tab-->
+                        <span class="mx-2 custom-cursor">
+                            <span>Help</span> &nbsp; <i class="fa fa-angle-down"></i>
+                        </span>
+                    </span>
+
+                    <span class="mx-5 px-5 d-none d-sm-inline">&nbsp;</span>
+
+                    <span class="px-2 text-secondary">
+                        <span class="custom-cursor mx-2">
+                            <i class="fa fa-mobile"></i>&nbsp; Get the App
+                        </span>
+                        
+                        <!--account tab-->
+                        <span class="mx-2 custom-cursor">
+                            <span>English-USD</span> &nbsp;<i class="fa fa-angle-down ml-3"></i>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="comments-block col-5 bg-light m-auto rounded-lg p-4">
+        <form class="d-flex createDiscussion">
+            <img src="./assets/images/photo-profil-1.jpeg" alt="visage" class="rounded-circle mr-3" width="40px" height="40px">
+            
+            <textarea name="newComment" class="newComment form-control custom-rounded-lg small custom-bg-gray" placeholder="Ajouter un commentaire" cols="30" rows="1.7"></textarea>
+            <input type="submit" value="" hidden>
+        </form>
+
+        <div class="all-discussions">
+            <div class="discussion">
+                
+                <div class="initiator d-flex mt-2">
+                    
+                </div>
+
+                <div class="ml-5 reactionsToInitiator pl-3">
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="d-none" id="template-comment">
+            
+                <img src="{{profilePicture}}" alt="visage" class="rounded-circle mt-4 mr-3" width="40px" height="40px">
+                <div class="comment col px-0">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="mt-3">
+                            <span class="author font-weight-bold mr-2">{{author}}</span>
+                            <span class="date font-weight-light">il y'a {{elapsedTime}}h</span>
+                        </span>
+                        <span class="setting h1 custom-cursor">...</span>
+                    </div>
+                    <div>
+                        {{ comment }}
+                    </div>
+                
+                    <div class="my-3">
+                        <span class="custom-cursor {{#if (isLike personalOpinion)}}active{{else}} {{/if}} like"><i class="fa fa-thumbs-up" aria-hidden="true"></i> {{likeCount}} </span>
+                        &nbsp;
+                        <span class="custom-cursor {{#if (isUnLike personalOpinion)}}active{{else}} {{/if}} unlike"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{unlikeCount}}</span>
+                        <span class="ml-5 custom-cursor respond">Repondre</span>
+                    </div>
+                </div>
+            
+        </div>
+        
+    </div>
+
+    <footer class="mt-3">
+        <div class="mx-5 py-4 d-flex flex-wrap justify-content-between">
+            <!--infos hello-city-->
+            <div class="col px-3 mb-3">
+                <h5>Informations sur HELLO CITY</h5>
+                <p class="text-black-50">
+                    <a class="custom-cursor text-decoration-none">Service client</a>, 
+                    <a class="custom-cursor text-decoration-none">Litiges et rapports</a>,
+                    <a class="custom-cursor text-decoration-none">Protection de l'acheteur</a>,
+                    <a class="custom-cursor text-decoration-none">Signaler une infraction des DPI</a>
+                </p>
+                <p class="">
+                    <span class="btn btn-success font-weight-bold mb-2"> 
+                        <span class="h5"><i class="fa fa-android" aria-hidden="true"></i> Google Play </span>
+                    </span>
+
+                    <span class="btn btn-secondary font-weight-bold mb-2"> 
+                        <span class="h5"><i class="fa fa-apple" aria-hidden="true"></i> App Store </span>
+                    </span>
+                </p>
+            </div>
+
+            <!--catégories-->
+            <div class="col px-3 mb-3">
+                <h5>Parcourir par catégorie</h5>
+                <p class="text-black-50">
+                    <a class="custom-cursor text-decoration-none">Les plus populaires</a>, 
+                    <a class="custom-cursor text-decoration-none">Produits</a>, 
+                    <a class="custom-cursor text-decoration-none">Promotions</a>, 
+                    <a class="custom-cursor text-decoration-none">Bas Prix</a>, 
+                    <a class="custom-cursor text-decoration-none">Comparer</a>, 
+                    <a class="custom-cursor text-decoration-none">Commentaires</a>, 
+                    <a class="custom-cursor text-decoration-none">Blog, Seller Portal</a>, 
+                    <a class="custom-cursor text-decoration-none">BLACK FRIDAY</a>, 
+                </p>
+            </div>
+        </div>
+
+        <!--copyright section-->
+        <div class="bg-dark text-light small py-2 px-5">
+            <a class="text-reset">Protection de la Propriété Intellectuelle</a> - 
+            <a class="text-reset">Politique de Confidentialité</a> - 
+            <a class="text-reset">Plan du site</a> - 
+            <a class="text-reset">Conditions d’Utilisation et Informations Légales</a> - 
+            <a class="text-reset">Guide pour Forces de l'Ordre</a> - 
+            <a class="text-reset">Information supplémentaire sur HELLO CITY</a> . Tous droits réservés
+        </div>
+    </footer>
+
+    <script src="./assets/js/jquery/jquery_v3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.js" integrity="sha512-MQkEjxbZvzs4TX8ES4/tTIyaYdtDlJzVocnPo0GoysTR0jCmNg0P2is7uqpCoWxmoS9X84CDVzuWgZD/R/Q2oQ==" crossorigin="anonymous"></script>
+    
+    <!--<script src="./assets/js/swiper/swiper.6.3.5.js"></script>-->
+    <script src="./assets/js/comment.js"></script>
+
+</body>
+</html>
